@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Chaps</title>
+
+</head>
+
+<body>
+
+<header>
+  <div w3-include-html="header.html"></div>
+</header>
+
+<section>
+
+  <div class="container">
+
+    <div class="page-heading">Chaps</div>
+
+    <div class="container">
+
+      <div class="card-columns">
+
+        <div class="card">
+          <div class="card-img-top"><img class="img-responsive" src="assets/images/chaps/chaps-red-stripe.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Chaps with Red Stripes</h5>
+            <p class="card-text">TBD</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img id="pretty_ass"  src="assets/images/chaps/chaps-red-stripe-rear.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Chaps with Red Stripes</h5>
+            <p class="card-text">TBD</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img  src="assets/images/chaps/buckle-front.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Chaps with Buckle Front</h5>
+            <p class="card-text">TBD</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img  src="assets/images/chaps/lace-up-front-and-sides.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Chaps with Side and Front Lacing</h5>
+            <p class="card-text">TBD</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img  src="assets/images/chaps/lace-up.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Chaps with Red Stripes and Laced Front and Back</h5>
+            <p class="card-text">TBD</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img  src="assets/images/chaps/lace-up-rear.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Chaps with Red Stripes and Laced Front and Back</h5>
+            <p class="card-text">TBD</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img  src="assets/images/chaps/brown-lace-up.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Brown Chaps with Lace-up Sides</h5>
+            <p class="card-text">Front view</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img  src="assets/images/chaps/brown-lace-up-sides.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Brown Chaps with Lace-up Sides</h5>
+            <p class="card-text">Side view</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img  src="assets/images/chaps/standard-chaps.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Standard Chaps</h5>
+            <p class="card-text">TBD</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img  src="assets/images/chaps/standard-chaps-rear.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Standard Chaps</h5>
+            <p class="card-text">TBD</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img  src="assets/images/chaps/chaps-red-stripe-2.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Chaps with Red Stripes</h5>
+            <p class="card-text">TBD</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="assets/js/include_script.js"></script> <!-- function that mimics SSI -->
+
+<script>
+  includeHTML();
+
+  $("#pretty_ass").mouseenter(function() {
+    $(this).css({
+      "height": "400px",
+      "width": "300px"
+    });
+  });
+
+  $("#pretty_ass").mouseleave(function() {
+    $(this).css({
+      "height": "300px",
+      "width": "225px"
+    });
+  });
+</script>
+
+</body>
+
+</html>

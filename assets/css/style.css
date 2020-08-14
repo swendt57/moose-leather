@@ -398,7 +398,8 @@ a.nav-link:hover {
 }
 
 .card-img-top img {
-  max-width: 225px;
+  /*max-width: 225px;*/
+  width: 225px;
 }
 
 h5.card-title {
