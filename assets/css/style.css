@@ -42,6 +42,10 @@ p {
     margin: 20px;
 }
 
+.small-font {
+    font-size: 10px;
+}
+
 strong {
     color: burlywood;
 }
@@ -147,6 +151,7 @@ a:hover {
     font-size: 28px;
     letter-spacing: .04rem;
     color: black;
+    text-shadow: #eee 2px 2px 1px;
     /*text-shadow: #eee 1px 1px 0, 2px 4px 2px #474747;*/
     margin-left: 146px;
 }
@@ -379,7 +384,7 @@ a.nav-link:hover {
 }
 
 .l-photo {
-  width: 225px;
+  width: 300px;
   /*height: 300px;*/
 }
 
@@ -415,19 +420,19 @@ h5.card-title {
 /*  }*/
 /*}*/
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .card-columns {
     column-count: 2;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .card-columns {
     column-count: 3;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .card-columns {
     column-count: 4;
   }

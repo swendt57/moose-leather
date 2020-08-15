@@ -35,7 +35,7 @@
       <div class="card-columns">
 
         <div class="card">
-          <div class="card-img-top"><img class="img-responsive" src="assets/images/chaps/chaps-red-stripe.jpg"></div>
+          <div class="card-img-top"><img src="assets/images/chaps/chaps-red-stripe.jpg"></div>
           <div class="card-body">
             <h5 class="card-title">Chaps with Red Stripes</h5>
             <p class="card-text">TBD</p>
@@ -43,10 +43,10 @@
         </div>
 
         <div class="card">
-          <div class="card-img-top"><img id="pretty_ass"  src="assets/images/chaps/chaps-red-stripe-rear.jpg"></div>
+          <div class="card-img-top"><img src="assets/images/chaps/chaps-red-stripe-rear.jpg"></div>
           <div class="card-body">
             <h5 class="card-title">Chaps with Red Stripes</h5>
-            <p class="card-text">TBD</p>
+            <p class="card-text">TBD <span class="small-font">(woof!)</span></p>
           </div>
         </div>
 
@@ -135,23 +135,10 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="assets/js/include_script.js"></script> <!-- function that mimics SSI -->
+<script src="assets/js/photo_handler.js"></script>
 
 <script>
   includeHTML();
-
-  $("#pretty_ass").mouseenter(function() {
-    $(this).css({
-      "height": "400px",
-      "width": "300px"
-    });
-  });
-
-  $("#pretty_ass").mouseleave(function() {
-    $(this).css({
-      "height": "300px",
-      "width": "225px"
-    });
-  });
 </script>
 
 </body>
