@@ -16,36 +16,44 @@
 // }
 
 
-let cardImage = $(".card-img-top img");
+// let cardImage = $(".card-img-top img");
+//
+// cardImage.mouseenter(function() {
 
-cardImage.mouseenter(function() {
+  // alert(this.clientHeight);
 
-  if(this.clientWidth === 225) {
-    $(this).css({
-      "height": "400px",
-      "width": "300px"
-    });
-  } else {
-    alert("in the else");
-    $(this).css({
-      "height": "300px",
-      "width": "400px"
-    });
-  }
+  // if(this.clientHeight === 300) {
+  //   $(this).css({
+  //     // "height": "400px",
+  //     // "width": "300px",
+  //     "max-width": "100%;",
+  //     "height": "auto"
+  //   });
+  // } else {
+  //   // alert("in the else");
+  //   $(this).css({
+  //     // "height": "300px",
+  //     // "width": "400px"
+  //     "max-width": "100%;",
+  //     "height": "auto"
+  //   });
+  // }
 
-});
-
-cardImage.mouseleave(function() {
-  // alert(this.clientWidth);
-  if(this.clientWidth === 300) {
-    $(this).css({
-      "height": "300px",
-      "width": "225px"
-    });
-  } else {
-    $(this).css({
-      "height": "225px",
-      "width": "300px"
-    });
-  }
-});
+// });
+//
+// cardImage.mouseleave(function() {
+//   // alert(this.clientWidth);
+//   if(this.clientWidth === 300) {
+//     // alert("in the if");
+//     $(this).css({
+//       "height": "300px",
+//       "width": "225px"
+//     });
+//   } else {
+//     // alert("in the else");
+//     $(this).css({
+//       "height": "169px",
+//       "width": "225px"
+//     });
+//   }
+// });

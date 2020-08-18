@@ -20,6 +20,10 @@ body {
     color: black;
 }
 
+.body-text {
+  text-align: left;
+}
+
 /* BS OR */
 .container {
     max-width: 90%;
@@ -34,12 +38,12 @@ section {
 .page-heading {
     font-family: "Calistoga", sans-serif;
     font-size: 1.5rem;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
     margin-top: 15px;
 }
 
 p {
-    margin: 20px;
+    margin: 10px;
 }
 
 .small-font {
@@ -47,16 +51,18 @@ p {
 }
 
 strong {
-    color: burlywood;
+    color: #76008c;
+  font-weight: bold;
 }
 
 a {
     color: #76008c;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
-    color: bisque;
+    color: darkblue;
     text-decoration: none;
 }
 
@@ -97,6 +103,10 @@ a:hover {
         font-size: 15px;
     }
 
+  .body-text {
+    text-align: justify;
+  }
+
     .container {
         max-width: 85%;
     }
@@ -107,6 +117,7 @@ a:hover {
 
     .page-heading {
         font-size: 1.75rem;
+      padding-bottom: 10px;
     }
 }
 
@@ -327,7 +338,7 @@ a.nav-link:hover {
 
     /* BS OR */
     .navbar {
-        background-image: url('images/leather_flag_faded.png'), url('images/bear_flag_faded.png'), url('images/rubber_flag_faded.png'); /* background for expanded nav */
+        background-image: url('images/leather_flag.png'), url('images/bear_flag.png'), url('images/rubber_flag.png'); /* background for expanded nav */
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-position: calc(50% - 225px) 0, calc(50% - 50px), calc(50% + 125px) 0;
         background-size: auto 90px;
@@ -351,10 +362,6 @@ a.nav-link:hover {
 
 /*---------------Home---------------*/
 
-.home-text {
-    text-align: justify;
-}
-
 .steve-in-store {
     width: 175px;
     margin: 5px 10px 20px 20px;
@@ -364,6 +371,7 @@ a.nav-link:hover {
 
 /* styles for tablet */
 @media (min-width: 768px) {
+
     .steve-in-store {
         width: 300px;
     }
@@ -372,21 +380,21 @@ a.nav-link:hover {
 /* styles for desktop */
 @media (min-width: 992px) {
     .steve-in-store {
-        width: 350px;
+        width: 550px;
     }
 }
 
 /*---------------Custom Work------------*/
 
-.p-photo {
-  width: 225px;
-  height: 300px;
-}
+/*.p-photo {*/
+/*  width: 225px;*/
+/*  height: 300px;*/
+/*}*/
 
-.l-photo {
-  width: 300px;
-  /*height: 300px;*/
-}
+/*.l-photo {*/
+/*  width: 300px;*/
+/*  height: 225px;*/
+/*}*/
 
 /* BS OR */
 .card {
@@ -395,16 +403,43 @@ a.nav-link:hover {
   background-color: black;
   color: #cccccc;
   /*min-width: 325px;*/
+
+
+
+  /*position: relative;*/
+  /*display: flex;*/
+  /*flex-direction: column-reverse;*/
 }
+
 
 .card-img-top {
   text-align: center;
   margin-top: 5px;
+  /*border: 1px solid black; */
 }
 
 .card-img-top img {
   /*max-width: 225px;*/
   width: 225px;
+  /* We need a border of the same with as the hover image otherwise we can cause the cards to rearrange */
+  border: 2px solid gray;
+  /* the following two are needed so we can show the image on top of the other elements on hover below */
+  position: relative;
+  z-index: 10
+}
+
+.card-img-top img.p-photo:hover {
+  border: 2px solid gray;
+  transform: scale(1.35); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform-origin: top center;
+  z-index: 20;
+}
+
+.card-img-top img.l-photo:hover {
+  border: 2px solid gray;
+  transform: scale(1.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform-origin: top center;
+  z-index: 20
 }
 
 h5.card-title {
