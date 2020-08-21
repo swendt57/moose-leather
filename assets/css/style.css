@@ -539,44 +539,61 @@ h5.card-title {
 }
 
 
-/*---------------Footer---------------*/
-footer .container{
-    margin: 30px auto 10px;
-}
+/* --------------------Footer-------------------- */
 
-footer p {
+/* I have NO idea why, but this became needed to make the footer center aligned */
+@media screen and (max-width: 50px) {
+
+  #copyright {
     font-size: 12px;
-    margin: 10px auto;
-    text-align: center;
-    color: bisque;
-}
+    margin: 0;
+    padding-bottom: 20px;
+  }
 
-footer a {
-    text-decoration: underline;
+  #contact {
+    margin: 0;
+  }
+
+  #contact i {
+    padding: 10px;
+    color: #76008c;
+  }
+
+  #footer-hr {
+    background: black;
+    width: 65%;
+    height: 1px;
+    margin: 30px auto 0;
+    max-width: 400px;
+
+  }
+
+  footer {
+    /*padding-top: 100px;*/
+    /*display: table-row; !* used to position footer at bottom of short pages *!*/
+    /*height: 0;*/
+  }
+
 }
 
 /* styles for tablet */
 @media (min-width: 768px) {
-
-    footer p {
-        font-size: 13px;
-    }
-
-    footer .container{
-        margin: 40px auto 10px;
-    }
+  #copyright {
+    font-size: .85rem;
+  }
+  #contact i {
+    font-size: 20px;
+  }
 }
 
 /* styles for desktop */
 @media (min-width: 992px) {
-
-    footer p {
-        font-size: 14px;
-    }
-
-    footer .container{
-        margin: 100px auto 10px;
-    }
+  #copyright {
+    font-size: .95rem;
+  }
+  #contact i {
+    font-size: 30px;
+  }
 }
 
 /*---------------Forms---------------*/
