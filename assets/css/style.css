@@ -449,19 +449,34 @@ a.nav-link:hover {
   box-shadow: 5px 5px 1px rgba(0,0,0,.4);
 }
 
+#scott-at-store {
+  width: 200px;
+  /*margin: 5px 10px 20px 20px;*/
+  border: 2px solid black;
+  box-shadow: 5px 5px 1px rgba(0,0,0,.4);
+}
+
 /* styles for tablet */
 @media (min-width: 768px) {
 
     #steve-in-store {
         width: 400px;
     }
+
+  #scott-at-store {
+    width: 250px;
+  }
 }
 
 /* styles for desktop */
 @media (min-width: 992px) {
     #steve-in-store {
-        width: 600px;
+        width: 500px;
     }
+
+  #scott-at-store {
+    width: 300px;
+  }
 }
 
 /*---------------Custom Work------------*/
@@ -500,6 +515,24 @@ a.nav-link:hover {
   position: relative;
   z-index: 10
 }
+
+/*TEMP START*/
+
+.card-img-top-test {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.card-img-top-test img {
+  width: 225px;
+  /* We need a border of the same with as the hover image otherwise we can cause the cards to rearrange */
+  border: 2px solid gray;
+  /* the following two are needed so we can show the image on top of the other elements on hover below */
+  position: relative;
+  z-index: 10
+}
+
+/*TEMP END*/
 
 .card-img-top img.p-photo:hover {
   border: 2px solid gray;
@@ -572,12 +605,14 @@ h5.card-title {
     padding-bottom: 20px;
   }
 
-  #contact {
-    margin: 0;
-  }
+  /*#contact {*/
+  /*  margin: 0;*/
+  /*}*/
 
   #contact i {
-    padding: 10px;
+    font-size: 25px;
+    padding: 20px;
+    margin-right: 20px;
     color: #76008c;
   }
 
@@ -604,7 +639,7 @@ h5.card-title {
     font-size: .85rem;
   }
   #contact i {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 

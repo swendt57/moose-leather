@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {box-sizing: border-box;}
+
+    .img-magnifier-container {
+      position:relative;
+    }
+
+    .img-magnifier-glass {
+      position: absolute;
+      border: 3px solid #000;
+      /*border-radius: 50%;*/
+      cursor: none;
+      /*Set the size of the magnifier glass:*/
+      width: 175px;
+      height: 125px;
+      z-index: 30;
+    }
+
+    * {box-sizing: border-box}
+
+    /* Container needed to position the overlay. Adjust the width as needed */
+    .overlay-container {
+      position: relative;
+      width: 50%;
+      max-width: 300px;
+    }
+
+    /* Make the image to responsive */
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* The overlay effect - lays on top of the container and over the image */
+    .overlay {
+      position: absolute;
+      bottom: 120px;
+      right: 39px;
+      /*background: rgb(0, 0, 0);*/
+      /*background: rgba(0, 0, 0, 0.5); !* Black see-through *!*/
+      color: #f1f1f1;
+      /*width: 10%;*/
+      /*transition: .5s ease;*/
+      /*opacity:0;*/
+      color: white;
+      font-size: 30px;
+      /*padding: 20px;*/
+      text-align: right;
+      z-index: 15;
+    }
+
+    #myimage {
+      /*border: 2px solid blue;*/
+    }
+
+    /* When you mouse over the container, fade in the overlay title */
+    .card-img-top.overlay:hover + .card-img-top#myimage {
+      /*opacity: 1;*/
+      /*border: 2px solid red;*/
+      /*transform: scale(1.35);*/
+      /*transform-origin: top center;*/
+      /*z-index: 20;*/
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="assets/js/magnify.js"></script>
+
+</head>
+<body>
+
+<!--<h1>Image Magnifier Glass</h1>-->
+
+<!--<p>Mouse over the image:</p>-->
+
+<div class="container">
+
+  <div class="card-columns">
+
+<div class="card overlay-container">
+  <div class="card-img-top">
+    <img class="img-responsive p-photo" src="assets/images/chaps/chaps-red-stripe-lg.jpg">
+    <div class="overlay"><i class="fas fa-expand-arrows-alt" style="font-size:20px;"></i></div>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Chaps with Stripes</h5>
+    <p class="card-text">I can make chaps with a variety of colored stripes. This one has red stripes down the outside of each leg. <i class="fas fa-search"></i></p>
+  </div>
+</div>
+
+    <div id="card1" class="card overlay-container">
+      <div class="card-img-top">
+        <img id="myimage" class="img-responsive p-photo" src="assets/images/chaps/chaps-red-stripe-rear-lg.jpg">
+        <div class="overlay"><i class="fas fa-expand-arrows-alt" style="font-size:20px;"></i></div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Chaps with Stripes</h5>
+        <p class="card-text">Back view of the red-striped chaps <span class="small-font">(woof!)</span> <i id="magnify" class="fas fa-search"></i></p>
+      </div>
+    </div>
+
+    <div id="card2" class="card">
+      <div class="card-img-top-test"><div class="img-magnifier-container" style="text-align:center; align-self: center"><img style="width:300px" id="myimage-2" class="img-responsive p-photo" src="assets/images/chaps/chaps-red-stripe-rear-lg.jpg"></div></div>
+      <div class="card-body">
+        <h5 class="card-title">Chaps with Stripes</h5>
+        <p class="card-text">Back view of the red-striped chaps <span class="small-font">(woof!)</span> <i id="close" class="fas fa-window-close"></i></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--<div class="img-magnifier-container">-->
+<!--  <img id="myimage" src="assets/images/chaps/chaps-red-stripe-rear-lg.jpg" width="300" height="400">-->
+<!--</div>-->
+
+<!--<p>Feel free to change the strength of the magnifier glass when initiating the magnify function.</p>-->
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+
+  $(document).ready(function(){
+    // alert("test");
+    $("#card2").hide();
+  });
+
+  $("#magnify").click(function(){
+    $("#card1").hide();
+    $("#card2").show();
+  });
+
+  $("#close").click(function(){
+    $("#card2").hide();
+    $("#card1").show();
+  });
+
+  /* Initiate Magnify Function
+  with the id of the image, and the strength of the magnifier glass:*/
+  // magnify("myimage", 2);
+  magnify("myimage-2", 3);
+
+
+
+</script>
+
+</body>
+</html>
