@@ -1,6 +1,6 @@
-function magnify(imgID, zoom) {
-  var img, glass, w, h, bw;
-  img = document.getElementById(imgID);
+function magnify(img, zoom) { //imgID
+  var glass, w, h, bw; //img
+  // img = document.getElementById(imgID);
   /*create magnifier glass:*/
   glass = document.createElement("DIV");
   glass.setAttribute("class", "img-magnifier-glass");

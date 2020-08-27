@@ -39,8 +39,8 @@
     /* The overlay effect - lays on top of the container and over the image */
     .overlay {
       position: absolute;
-      bottom: 120px;
-      right: 39px;
+      top: 265px;
+      right: 41px;
       /*background: rgb(0, 0, 0);*/
       /*background: rgba(0, 0, 0, 0.5); !* Black see-through *!*/
       color: #f1f1f1;
@@ -87,45 +87,94 @@
 
   <div class="card-columns">
 
-<div class="card overlay-container">
-  <div class="card-img-top">
-    <img class="img-responsive p-photo" src="assets/images/chaps/chaps-red-stripe-lg.jpg">
-    <div class="overlay"><i class="fas fa-expand-arrows-alt" style="font-size:20px;"></i></div>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Chaps with Stripes</h5>
-    <p class="card-text">I can make chaps with a variety of colored stripes. This one has red stripes down the outside of each leg. <i class="fas fa-search"></i></p>
-  </div>
-</div>
-
-    <div id="card1" class="card overlay-container">
+    <div class="card overlay-container">
       <div class="card-img-top">
-        <img id="myimage" class="img-responsive p-photo" src="assets/images/chaps/chaps-red-stripe-rear-lg.jpg">
+        <img class="img-responsive p-photo" src="assets/images/chaps/chaps-red-stripe-lg.jpg">
         <div class="overlay"><i class="fas fa-expand-arrows-alt" style="font-size:20px;"></i></div>
       </div>
       <div class="card-body">
         <h5 class="card-title">Chaps with Stripes</h5>
-        <p class="card-text">Back view of the red-striped chaps <span class="small-font">(woof!)</span> <i id="magnify" class="fas fa-search"></i></p>
+        <p class="card-text">I can make chaps with a variety of colored stripes. This one has red stripes down the outside
+          of each leg.
+          <i onclick="launchMagnify($(this))" class="fas fa-search"></i>
+        </p>
       </div>
     </div>
 
-    <div id="card2" class="card">
-      <div class="card-img-top-test"><div class="img-magnifier-container" style="text-align:center; align-self: center"><img style="width:300px" id="myimage-2" class="img-responsive p-photo" src="assets/images/chaps/chaps-red-stripe-rear-lg.jpg"></div></div>
+    <div class="card magnify-card">
+      <div class="card-img-top-test">
+        <div class="img-magnifier-container" style="text-align:center; align-self: center">
+          <img style="width:300px" class="img-responsive p-photo magnify-photo"
+               src="assets/images/chaps/chaps-red-stripe-lg.jpg">
+        </div>
+      </div>
       <div class="card-body">
         <h5 class="card-title">Chaps with Stripes</h5>
-        <p class="card-text">Back view of the red-striped chaps <span class="small-font">(woof!)</span> <i id="close" class="fas fa-window-close"></i></p>
+        <p class="card-text">I can make chaps with a variety of colored stripes. This one has red stripes down the
+          outside of each leg. <span class="small-font">(woof!)</span>
+          <i onclick="closeMagnify($(this))" class="fas fa-window-close"></i>
+        </p>
       </div>
     </div>
+
+    <div class="card overlay-container">
+      <div class="card-img-top">
+        <img class="img-responsive p-photo" src="assets/images/chaps/chaps-red-stripe-rear-lg.jpg">
+        <div class="overlay"><i class="fas fa-expand-arrows-alt" style="font-size:20px;"></i></div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Chaps with Stripes</h5>
+        <p class="card-text">Back view of the red-striped chaps <span class="small-font">(woof!)</span>
+          <i onclick="launchMagnify($(this))" class="fas fa-search"></i>
+        </p>
+      </div>
+    </div>
+
+    <div class="card magnify-card">
+      <div class="card-img-top-test">
+        <div class="img-magnifier-container" style="text-align:center; align-self: center">
+          <img style="width:300px" class="img-responsive p-photo magnify-photo"
+               src="assets/images/chaps/chaps-red-stripe-rear-lg.jpg">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Chaps with Stripes</h5>
+        <p class="card-text">Back view of the red-striped chaps <span class="small-font">(woof!)</span>
+          <i onclick="closeMagnify($(this))" class="fas fa-window-close"></i>
+        </p>
+      </div>
+    </div>
+
+    <div class="card overlay-container">
+      <div class="card-img-top">
+        <img class="img-responsive p-photo" src="assets/images/chaps/lace-up-front-and-sides.jpg">
+        <div class="overlay"><i class="fas fa-expand-arrows-alt" style="font-size:20px;"></i></div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Chaps with Lacing All Around</h5>
+        <p class="card-text">These chaps use lacing both for adjustment on the legs and rear as well as for the front closure 
+          <i onclick="launchMagnify($(this))" class="fas fa-search"></i>
+        </p>
+      </div>
+    </div>
+
+    <div class="card magnify-card">
+      <div class="card-img-top-test">
+        <div class="img-magnifier-container" style="text-align:center; align-self: center">
+          <img style="width:300px" class="img-responsive p-photo magnify-photo" src="assets/images/chaps/lace-up-front-and-sides.jpg">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Chaps with Lacing All Around</h5>
+        <p class="card-text">These chaps use lacing both for adjustment on the legs and rear as well as for the front closure
+          <i onclick="closeMagnify($(this))" class="fas fa-window-close"></i>
+        </p>
+      </div>
+    </div>
+
 
   </div>
 </div>
-
-<!--<div class="img-magnifier-container">-->
-<!--  <img id="myimage" src="assets/images/chaps/chaps-red-stripe-rear-lg.jpg" width="300" height="400">-->
-<!--</div>-->
-
-<!--<p>Feel free to change the strength of the magnifier glass when initiating the magnify function.</p>-->
-
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -133,27 +182,33 @@
 
 <script>
 
+  //hide all cards with magnify-card class
   $(document).ready(function(){
-    // alert("test");
-    $("#card2").hide();
+    $(".magnify-card").hide();
   });
 
-  $("#magnify").click(function(){
-    $("#card1").hide();
-    $("#card2").show();
-  });
-
-  $("#close").click(function(){
-    $("#card2").hide();
-    $("#card1").show();
-  });
 
   /* Initiate Magnify Function
-  with the id of the image, and the strength of the magnifier glass:*/
-  // magnify("myimage", 2);
-  magnify("myimage-2", 3);
+  for each magnify image, along with the strength of the magnifier glass:*/
+  let imgArray = document.getElementsByClassName('magnify-photo');
+  for (let i=0; i<imgArray.length; i++) {
+    magnify(imgArray[i], 3);
+  }
 
 
+  function launchMagnify($this) {
+    let regularCard = $this.parents('.overlay-container');
+    let magnifyCard = regularCard.next();
+    regularCard.hide();
+    magnifyCard.show();
+  }
+
+  function closeMagnify($this) {
+    let magnifyCard = $this.parents('.magnify-card');
+    let regularCard = magnifyCard.prev();
+    magnifyCard.hide();
+    regularCard.show();
+  }
 
 </script>
 
