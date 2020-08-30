@@ -20,24 +20,27 @@
 
 <body>
 
+<div id="page-container"> <!-- footer positioning -->
+  <div id="content-wrap"> <!-- footer positioning -->
+
 <header>
   <div w3-include-html="header.html"></div>
 </header>
 
-<section>
+<section class="main">
 
   <div class="container">
 
-  <div class="page-heading">Custom Work</div>
+  <div class="page-heading">Portfolio</div>
 
     <div class="body-text">
       <p>
-        <figure class="figure">
+        <figure class="figure-landscape">
           <img id="daddy-ben" src="assets/images/daddy_ben.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">Daddy Ben Fowler - 1923-2010</figcaption>
         </figure>
 
-        Click the links below to see some examples of my custom work from over the years.
+        Click the links below to see some examples of my projects from over the years.
       </p>
     </div>
 
@@ -56,6 +59,8 @@
 
       <p>Tap or roll over any of the gallery photos to see an enlarged version.</p>
 
+      <p style="clear:both;margin:0;"></p> <!-- a trick to get the footer to stay under the floating figures -->
+
 
 <!--      <div id="aside-container"><aside><img id="daddy-ben" src="assets/images/daddy_ben.jpg" className="aside-img" alt="Daddy Ben"/>Daddy Ben (1923-2010)</aside></div>-->
     </div>
@@ -65,9 +70,13 @@
   </div>
 </section>
 
+  </div> <!-- content-wrap end - footer positioning -->
+
 <footer>
   <div w3-include-html="footer.html"></div>
 </footer>
+
+  </div> <!-- page-container end - footer positioning-->
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

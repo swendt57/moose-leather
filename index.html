@@ -20,36 +20,54 @@
 
 <body>
 
+  <div id="page-container"> <!-- footer positioning -->
+    <div id="content-wrap"> <!-- footer positioning -->
+
   <header>
     <div w3-include-html="header.html"></div>
   </header>
 
-<section>
+<section class="main">
   <div class="container">
     <div class="page-heading">Moose Leather</div>
 
   <div class="body-text">
-    <figure class="figure">
+    <figure class="figure-landscape">
       <img id="steve-in-store" src="assets/images/steve_in_store.jpg" class="figure-img img-fluid rounded" alt="Steve in his store in the 90's">
       <figcaption class="figure-caption">Steve&nbsp;at&nbsp;Moose&nbsp;Leather in&nbsp;the&nbsp;90's </figcaption>
     </figure>
 
     <p>My name is Steve Wendt and I have been working with leather since 1989. In the 90's I owned Moose Leather which was a store on Upas St here in San Diego. Besides custom work, I also had off-the-rack items, and offered alterations and repair. After a 20-year stint at Qualcomm, I am resurrecting my leather business.</p>
 
-    <div><figure style="display:inline;">
-      <img id="scott-at-store" style="float:left;margin:20px;" src="assets/images/scott_at_store.jpg" class="figure-img img-fluid rounded" alt="Scott in front of Moose Leather">
-      <!--      <figcaption class="figure-caption">Steve&nbsp;at&nbsp;Moose&nbsp;Leather in&nbsp;the&nbsp;90's </figcaption>-->
-    </figure><p>I&nbsp;work out of my home and can alter, repair, or create something new for you. I have extensive experience with chaps, vests, pants, shirts, harnesses, and the like. You can check out some of my original work throughout this site. Occasionally I will have items for sale in Off-The-Rack.  And, who knows, maybe I'll figure out a way to bring back our consignment rack that was quite popular at the time.</p></div>
+      <figure class="figure-portrait">
+      <img id="scott-at-store" style="" src="assets/images/scott_at_store.jpg" class="figure-img img-fluid rounded" alt="Scott in front of Moose Leather">
+            <figcaption class="figure-caption">Scott Moats who designed my logo and created much of my signage</figcaption>
+    </figure>
+      <p>I&nbsp;work out of my home and can alter, repair, or create something new for you. I have extensive experience with chaps, vests, pants, shirts, harnesses, and the like. You can check out some of my original work throughout this site. Occasionally I will have items for sale in Off-The-Rack.  And, who knows, maybe I'll figure out a way to bring back our consignment rack that was quite popular at the time.</p></div>
 
     <p>Feel free to text or call me on my cell at <strong><a href="tel:619-964-1865">(619) 964-1865</a></strong> or email me at <strong><a href="mailto:steve@moose-leather.com">steve@moose-leather.com</a></strong> and let me create your vision!</p>
 
   </div>
-  </div>
+
+<!--    <div id="aside-container">-->
+<!--      <aside>-->
+
+  <p class="endorsement"><span>Steve does great work with leather. He is creative, fun, and detail oriented. I’m very happy with my leather that he made for me and I would go back again to him. --GM</span></p>
+<!--      </aside>-->
+
+<!--    </div>-->
+
+  <p style="clear:both;margin:0;"></p> <!-- a trick to get the footer to stay under the floating figures -->
+
 </section>
+
+  </div> <!-- content-wrap end - footer positioning -->
 
   <footer>
     <div w3-include-html="footer.html"></div>
   </footer>
+
+  </div> <!-- page-container end - footer positioning-->
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -59,6 +77,8 @@
 
 <script>
   includeHTML();
+
+  // alert($('#footer').parents()[0]);
 </script>
 
 <!--<script>-->

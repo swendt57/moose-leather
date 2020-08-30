@@ -20,11 +20,14 @@
 
 <body>
 
+<div id="page-container"> <!-- footer positioning -->
+  <div id="content-wrap"> <!-- footer positioning -->
+
 <header>
   <div w3-include-html="header.html"></div>
 </header>
 
-<section>
+<section class="main">
 
   <div class="container">
 
@@ -34,6 +37,14 @@
     <div class="container">
 
       <div class="card-columns">
+
+        <div class="card">
+          <div class="card-img-top"><img class="img-responsive l-photo" src="assets/images/other/two-strap-wristbands.jpg" alt="Wristbands with two straps"></div>
+          <div class="card-body">
+            <h5 class="card-title">Two-Strap Wristbands</h5>
+            <p class="card-text">Nice look!</p>
+          </div>
+        </div>
 
         <div class="card">
           <div class="card-img-top"><img class="img-responsive l-photo" src="assets/images/other/perforated-jock.jpg" alt="Regular perforated jock strap"></div>
@@ -84,6 +95,14 @@
         </div>
 
         <div class="card">
+          <div class="card-img-top"><img class="img-responsive l-photo" src="assets/images/other/stirrup-thing.jpg" alt="Wide belt lined with fleece with attached stirrups"></div>
+          <div class="card-body">
+            <h5 class="card-title">"Stirrup Thing"</h5>
+            <p class="card-text">I was handed a sketch of this item and made it to his specifications. But I never saw it in use, nor was I told how he would. Speculation abounds!</p>
+          </div>
+        </div>
+
+        <div class="card">
           <div class="card-img-top"><img class="img-responsive l-photo" src="assets/images/other/tire-tread-wristband.jpg" alt="Wristband with tire tread pattern sewn on"></div>
           <div class="card-body">
             <h5 class="card-title">Tire Tread Wristband</h5>
@@ -124,7 +143,7 @@
         </div>
 
         <div class="card">
-          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/other/santa-belt.jpg" alt="Snake-skin-like studded belt"></div>
+          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/other/santa-belt.jpg" alt="Santa Claus with his new belt"></div>
           <div class="card-body">
             <h5 class="card-title">A Belt for St Nick</h5>
             <p class="card-text">One day St Nick walked into the shop and declared "Santa needs a new belt!" so we made him one!</p>
@@ -132,7 +151,7 @@
         </div>
 
         <div class="card">
-          <div class="card-img-top"><img class="img-responsive l-photo" src="assets/images/other/red-black-restraints.jpg" alt="Snake-skin-like studded belt"></div>
+          <div class="card-img-top"><img class="img-responsive l-photo" src="assets/images/other/red-black-restraints.jpg" alt="Black leather restraints with red leather accents"></div>
           <div class="card-body">
             <h5 class="card-title">Red on Black Restraints</h5>
             <p class="card-text">These are my wrist and ankle restraints with D-rings instead of lead-chains and feature a two-color design.</p>
@@ -148,9 +167,13 @@
   </div>
 </section>
 
-<footer style="calc(screenWidth)">
-  <div w3-include-html="footer.html"></div>
-</footer>
+  </div> <!-- content-wrap end - footer positioning -->
+
+  <footer>
+    <div w3-include-html="footer.html"></div>
+  </footer>
+
+</div> <!-- page-container end - footer positioning-->
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

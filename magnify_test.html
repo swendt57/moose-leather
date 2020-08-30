@@ -147,30 +147,33 @@
 
     <div class="card overlay-container">
       <div class="card-img-top">
-        <img class="img-responsive p-photo" src="assets/images/chaps/lace-up-front-and-sides-lg.jpg">
+        <div class="img-magnifier-container" style="text-align:center; align-self: center">
+          <img class="img-responsive p-photo" src="assets/images/chaps/lace-up-front-and-sides-lg.jpg">
+        </div>
         <div class="overlay"><i class="fas fa-expand-arrows-alt" style="font-size:20px;"></i></div>
       </div>
       <div class="card-body">
         <h5 class="card-title">Chaps with Lacing All Around</h5>
         <p class="card-text">These chaps use lacing both for adjustment on the legs and rear as well as for the front closure
           <i onclick="launchMagnify($(this))" class="fas fa-search"></i>
-        </p>
-      </div>
-    </div>
-
-    <div class="card magnify-card">
-      <div class="card-img-top-test">
-        <div class="img-magnifier-container" style="text-align:center; align-self: center">
-          <img style="width:300px" class="img-responsive p-photo magnify-photo" src="assets/images/chaps/lace-up-front-and-sides-lg.jpg">
-        </div>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Chaps with Lacing All Around</h5>
-        <p class="card-text">These chaps use lacing both for adjustment on the legs and rear as well as for the front closure
           <i onclick="closeMagnify($(this))" class="fas fa-window-close"></i>
         </p>
       </div>
     </div>
+
+<!--    <div class="card magnify-card">-->
+<!--      <div class="card-img-top-test">-->
+<!--        <div class="img-magnifier-container" style="text-align:center; align-self: center">-->
+<!--          <img style="width:300px" class="img-responsive p-photo magnify-photo" src="assets/images/chaps/lace-up-front-and-sides-lg.jpg">-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="card-body">-->
+<!--        <h5 class="card-title">Chaps with Lacing All Around</h5>-->
+<!--        <p class="card-text">These chaps use lacing both for adjustment on the legs and rear as well as for the front closure-->
+<!--          <i onclick="closeMagnify($(this))" class="fas fa-window-close"></i>-->
+<!--        </p>-->
+<!--      </div>-->
+<!--    </div>-->
 
 
   </div>
@@ -194,21 +197,50 @@
   for (let i=0; i<imgArray.length; i++) {
     magnify(imgArray[i], 3);
   }
-
-
+  //THIS CAN CREATE DUPLICATE MAGNIFIERS
   function launchMagnify($this) {
-    let regularCard = $this.parents('.overlay-container');
-    let magnifyCard = regularCard.next();
-    regularCard.hide();
-    magnifyCard.show();
+    let img =  $this.parents('.overlay-container').find('img')[0];
+    // alert(img.src);
+    magnify(img, 3);
+    // alert(glass);
+  }
+  //THIS IS NOT YET WORKIN
+  function closeMagnify($this) {
+    let img =  $this.parents('.overlay-container').find('img')[0];
+    img.parentNode.remove
+
+
+    //STILL WORKING ON CANCCEL
+    // img.addEventListener('mousemove', null);
+    // img.addEventListener('touchmove', null);
+    // img.removeEventListener("mousemove", moveMagnifier);
+    // var current = img.addEventListener;
+    // img.addEventListener = function (type, listener) {
+    //   if(type =="mousemove")
+    //   {
+    //     //do nothing
+    //   }
+    //   else if (type == "touchmove")
+    //   {
+    //    //do nothing
+    //   }
+    // };
   }
 
-  function closeMagnify($this) {
-    let magnifyCard = $this.parents('.magnify-card');
-    let regularCard = magnifyCard.prev();
-    magnifyCard.hide();
-    regularCard.show();
-  }
+
+  // function launchMagnify($this) {
+  //   let regularCard = $this.parents('.overlay-container');
+  //   let magnifyCard = regularCard.next();
+  //   regularCard.hide();
+  //   magnifyCard.show();
+  // }
+  //
+  // function closeMagnify($this) {
+  //   let magnifyCard = $this.parents('.magnify-card');
+  //   let regularCard = magnifyCard.prev();
+  //   magnifyCard.hide();
+  //   regularCard.show();
+  // }
 
 </script>
 

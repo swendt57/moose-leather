@@ -20,11 +20,14 @@
 
 <body>
 
+<div id="page-container"> <!-- footer positioning -->
+  <div id="content-wrap"> <!-- footer positioning -->
+
 <header>
   <div w3-include-html="header.html"></div>
 </header>
 
-<section>
+<section class="main">
 
   <div class="container">
 
@@ -83,6 +86,14 @@
           </div>
         </div>
 
+        <div class="card">
+          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/shirts/black-short-sleeve.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Black with Short Sleeved</h5>
+            <p class="card-text">When I made this shirt, I was asked to take it in very close on the sides. I was concerned that he would outgrow it in a short time. Well, it is now over 20 years later and he can still wear it!</p>
+          </div>
+        </div>
+
 
       </div>
 
@@ -93,9 +104,13 @@
   </div>
 </section>
 
-<footer>
-  <div w3-include-html="footer.html"></div>
-</footer>
+  </div> <!-- content-wrap end - footer positioning -->
+
+  <footer>
+    <div w3-include-html="footer.html"></div>
+  </footer>
+
+</div> <!-- page-container end - footer positioning-->
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Calistoga:400|Squada+One|Roboto:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Calistoga:400|Squada+One|Roboto:300,400,500,600,700|Itim&display&display=swap');
 
 /* BS OR = Bootstrap Override */
 
@@ -18,6 +18,8 @@ html, body {
 body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
+  height: 100vh;
+    /*min-height: 3000px;*/
     /*color: black;*/
 
 }
@@ -32,7 +34,7 @@ body {
     padding: 0;
 }
 
-section {
+.main {
     padding-top: 95px;
     margin: auto;
 }
@@ -42,6 +44,11 @@ section {
     font-size: 1.5rem;
     /*padding-bottom: 5px;*/
     margin-top: 15px;
+}
+
+.page-subheading {
+  font-family: "Calistoga", sans-serif;
+  font-size: 1.2rem;
 }
 
 p {
@@ -80,11 +87,19 @@ a:hover {
 /*}*/
 
 
-.figure {
+.figure-landscape {
   float: right;
-  width: 200px;
+  width: 210px;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.figure-portrait {
+  float: left;
+  width: 205px;
+  text-align: center;
+  padding: 10px;
   margin: 5px;
 }
 
@@ -93,6 +108,31 @@ a:hover {
   font-size: 13px;
 }
 
+aside {
+  /*font-size: .85rem;*/
+  text-align: justify;
+  border: 3px double black;
+  padding: 5px;
+  margin-left: 15px;
+  background-color: #faf9e9;
+}
+
+#aside-container{
+  float: right;
+  width: 200px;
+  padding: 0;
+}
+
+/* footer positioning */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* footer positioning */
+#content-wrap {
+  padding-bottom: 100px;    /* Footer height */
+}
 
 /*.ml-btn {*/
 /*    padding: 3px 5px;*/
@@ -139,7 +179,7 @@ a:hover {
         max-width: 85%;
     }
 
-    section {
+    .main {
         padding-top: 100px;
     }
 
@@ -152,13 +192,21 @@ a:hover {
       font-size: 12px;
     }
 
-    .figure{
+    .figure-landscape{
       width: 420px;
+    }
+
+    .figure-portrait {
+      width: 255px;
     }
 
     .figure-caption {
       font-size: 14px;
     }
+
+  #aside-container{
+    width: 300px;
+  }
 
 }
 
@@ -168,7 +216,7 @@ a:hover {
         font-size: 16px;
     }
 
-    section {
+    .main {
         padding-top: 110px;
     }
 
@@ -180,13 +228,24 @@ a:hover {
       font-size: 13px;
     }
 
-    .figure{
-      width: 620px;
+    .figure-landscape {
+      width: 520px;
     }
+
+  .figure-portrait {
+    width: 305px;
+  }
 
     .figure-caption {
       font-size: 15px;
     }
+
+  #aside-container{
+    position: relative;
+    bottom: 150px;
+    right: 50px;
+    width: 800px;
+  }
 }
 
 
@@ -284,7 +343,7 @@ a.nav-link:hover {
 .navbar-toggler {
     padding: 4px;
     border: 2px solid black;
-    background-color: rgba(115, 100, 81, .75);
+    background-color: rgba(115, 100, 81, .5);
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='lightgray' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     box-shadow: 3px 3px 2px #474747;
 }
@@ -456,6 +515,21 @@ a.nav-link:hover {
   box-shadow: 5px 5px 1px rgba(0,0,0,.4);
 }
 
+.endorsement {
+  font-family: "Itim", sans-serif;
+  font-size: .9rem;
+  /*font-weight: bold;*/
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.endorsement span {
+  display: table;
+  background-color: rgba(207,166,214,.4);
+  padding: 10px;
+  box-shadow: 5px 5px 1px rgba(0,0,0,.4);
+}
+
 /* styles for tablet */
 @media (min-width: 768px) {
 
@@ -465,6 +539,10 @@ a.nav-link:hover {
 
   #scott-at-store {
     width: 250px;
+  }
+
+  .endorsement {
+    font-size: 1rem;
   }
 }
 
@@ -489,7 +567,7 @@ a.nav-link:hover {
 }
 
 .custom-links {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 /* BS OR */
@@ -599,8 +677,16 @@ h5.card-title {
 /* I have NO idea why, but this became needed to make the footer center aligned */
 @media screen and (max-width: 50px) {
 
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;            /* Footer height */
+  }
+
   #copyright {
     /*font-size: 12px;*/
+    clear: both;
     margin: 0;
     padding-bottom: 20px;
   }
@@ -619,25 +705,28 @@ h5.card-title {
   #footer-hr {
     background: black;
     width: 65%;
-    height: 1px;
-    margin: 30px auto 0;
+    height: 3px;
+    margin: 100px auto 0;
     max-width: 400px;
 
   }
 
-  footer {
-    /*padding-top: 100px;*/
-    /*display: table-row; !* used to position footer at bottom of short pages *!*/
-    /*height: 0;*/
-  }
 
 }
 
 /* styles for tablet */
 @media (min-width: 768px) {
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;            /* Footer height */
+  }
+
   #copyright {
     font-size: .85rem;
   }
+
   #contact i {
     font-size: 25px;
   }
@@ -651,6 +740,13 @@ h5.card-title {
   #contact i {
     font-size: 30px;
   }
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;            /* Footer height */
 }
 
 /*---------------Forms---------------*/

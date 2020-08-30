@@ -20,11 +20,14 @@
 
 <body>
 
+<div id="page-container"> <!-- footer positioning -->
+  <div id="content-wrap"> <!-- footer positioning -->
+
 <header>
   <div w3-include-html="header.html"></div>
 </header>
 
-<section>
+<section class="main">
 
   <div class="container">
 
@@ -75,6 +78,14 @@
 
   </div>
 </section>
+
+  </div> <!-- content-wrap end - footer positioning -->
+
+  <footer>
+    <div w3-include-html="footer.html"></div>
+  </footer>
+
+</div> <!-- page-container end - footer positioning-->
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
