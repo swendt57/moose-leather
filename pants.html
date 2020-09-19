@@ -20,6 +20,42 @@
 
 <body>
 
+<!-- Adult Warning Modal Start -->
+<!-- the model will not work unless the code is placed on each page - why?? -->
+<!-- Leave the modal here, otherwise the backdrop does not disappear -->
+<div class="modal-backdrop">
+  <div class="modal fade" data-backdrop="static" id="warningModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div><img class="logo" src="assets/images/antlers.png"
+                    alt="Image of Moose Leather's antler logo">
+            <div class="modal-title">
+              <div class="modal-moose">Moose</div>
+              <div class="modal-leather">Leather</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          This site is intended for adults only. If you are under the age of 18, please leave now. <br/> (But come back when you are!)
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button id="enter-btn" type="button" class="btn btn-success" data-dismiss="modal">Enter</button>
+          <button id="leave-btn" type="button" class="btn btn-danger" data-dismiss="modal">Leave</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Adult Warning Modal End -->
+
 <div id="page-container"> <!-- footer positioning -->
   <div id="content-wrap"> <!-- footer positioning -->
 
@@ -125,6 +161,8 @@
 <script src="assets/js/include_script.js"></script> <!-- function that mimics SSI -->
 <script src="assets/js/photo_handler.js"></script>
 <script src="assets/js/hide_header.js"></script>
+<!-- adult warning modal -->
+<script src="assets/js/warning.js"></script>
 
 <script>
   includeHTML();

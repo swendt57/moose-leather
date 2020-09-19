@@ -2,6 +2,36 @@
 
 /* BS OR = Bootstrap Override */
 
+/* Colors */
+/* Muted Flag Colors */
+.red {
+  background-color: rgba(242,166,176,.3);
+}
+
+.orange {
+  background-color: rgba(253,215,179,.3);
+}
+
+.yellow {
+  background-color: rgba(255,249,183,.3);
+}
+
+.green {
+  background-color: rgba(177,213,182,.5);
+}
+
+.blue {
+  background-color: rgba(180,188,254,.5);
+}
+
+.purple {
+  background-color: rgba(207,166,214,.5);
+}
+
+.light-purple {
+  background-color: rgba(207,166,214,.3);
+}
+
 /*---------------General Styles---------------*/
 
 * {
@@ -123,6 +153,9 @@ aside {
   padding: 0;
 }
 
+
+
+
 /* footer positioning */
 #page-container {
   position: relative;
@@ -131,7 +164,7 @@ aside {
 
 /* footer positioning */
 #content-wrap {
-  padding-bottom: 100px;    /* Footer height */
+  /*padding-bottom: 100px;    !* Footer height *!*/
 }
 
 /*.ml-btn {*/
@@ -518,6 +551,7 @@ a.nav-link:hover {
 .endorsement {
   font-family: "Itim", sans-serif;
   font-size: .9rem;
+  color: #222222;
   /*font-weight: bold;*/
   font-style: italic;
   margin-top: 20px;
@@ -525,9 +559,10 @@ a.nav-link:hover {
 
 .endorsement span {
   display: table;
-  background-color: rgba(207,166,214,.4);
-  padding: 10px;
-  box-shadow: 5px 5px 1px rgba(0,0,0,.4);
+  /*background-color: rgba(242,166,176,.5);*/
+  padding: 10px 10px 10px 20px;
+  box-shadow: 4px 4px 2px rgba(0,0,0,.4);
+  border-radius: 10px;
 }
 
 /* styles for tablet */
@@ -542,7 +577,7 @@ a.nav-link:hover {
   }
 
   .endorsement {
-    font-size: 1rem;
+    font-size: .95rem;
   }
 }
 
@@ -554,6 +589,10 @@ a.nav-link:hover {
 
   #scott-at-store {
     width: 300px;
+  }
+
+  .endorsement {
+    font-size: 1rem;
   }
 }
 
@@ -616,14 +655,14 @@ a.nav-link:hover {
   border: 2px solid gray;
   transform: scale(1.35);
   transform-origin: top center;
-  z-index: 20;
+  z-index: 15;
 }
 
 .card-img-top img.l-photo:hover {
   border: 2px solid gray;
   transform: scale(1.75);
   transform-origin: top center;
-  z-index: 20
+  z-index: 15
 }
 
 h5.card-title {
@@ -677,23 +716,12 @@ h5.card-title {
 /* I have NO idea why, but this became needed to make the footer center aligned */
 @media screen and (max-width: 50px) {
 
-  #footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 70px;            /* Footer height */
-  }
-
-  #copyright {
-    /*font-size: 12px;*/
+  #copyright, #contact {
     clear: both;
+    font-size: .7rem;
     margin: 0;
     padding-bottom: 20px;
   }
-
-  /*#contact {*/
-  /*  margin: 0;*/
-  /*}*/
 
   #contact i {
     font-size: 25px;
@@ -708,45 +736,48 @@ h5.card-title {
     height: 3px;
     margin: 100px auto 0;
     max-width: 400px;
-
   }
 
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;            /* Footer height */
+  }
 
 }
 
 /* styles for tablet */
 @media (min-width: 768px) {
-  #footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 90px;            /* Footer height */
-  }
 
-  #copyright {
-    font-size: .85rem;
+  #copyright, #contact {
+    font-size: .8rem;
   }
 
   #contact i {
     font-size: 25px;
   }
+
+  #footer {
+    height: 90px;            /* Footer height */
+  }
+
 }
 
 /* styles for desktop */
 @media (min-width: 992px) {
-  #copyright {
-    font-size: .95rem;
+  #copyright, #contact {
+    font-size: .9rem;
   }
+
   #contact i {
     font-size: 30px;
   }
-}
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;            /* Footer height */
+  #footer {
+    height: 100px; /* Footer height */
+  }
+
 }
 
 /*---------------Forms---------------*/
@@ -867,27 +898,64 @@ form label {
 	padding: 0 0 0 16px;
 }
 
-/*---------------Tables---------------*/
+/*---------------Adult Warning ---------------*/
 
-/* BS OR */
-table {
-    font-size: 15px;
-    color: bisque;
+.modal-dialog {
+  max-width: 700px;
 }
 
-th {
-    color: burlywood;
+.modal-content {
+  background-color: lightgray;
 }
 
-td {
-    color: bisque;
+.modal-header {
+  border: 0;
 }
 
-/* styles for tablet */
-@media (min-width: 768px) {
-    table {
-        font-size: 16px;
-        table-layout: fixed;
-    }
+.modal-footer {
+  border: 0;
 }
+
+.modal-backdrop {
+  background-color: rgba(100, 100, 100, 0.90);
+  width: 100vw;
+  height: 100vh;
+  /*z-index: -1;*/
+}
+
+.modal-title {
+  font-family: "Calistoga", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: .04rem;
+  color: black;
+  text-shadow: #eee 2px 2px 1px;
+  margin-left: 145px;
+}
+
+.modal-moose {
+  position: absolute;
+  top: 20px;
+}
+
+.modal-leather {
+  position: absolute;
+  top: 49px;
+}
+
+/* styles for medium screens */
+@media (min-width: 1035px) {
+  .modal-title {
+    margin-left: 160px;
+  }
+}
+
+/* styles for large screens */
+@media (min-width: 1400px) {
+  .modal-title {
+    margin-left: 175px;
+  }
+}
+
+
 

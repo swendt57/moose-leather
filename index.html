@@ -20,8 +20,44 @@
 
 <body>
 
+<!-- Adult Warning Modal Start -->
+<!-- the model will not work unless the code is placed on each page - why?? -->
+<!-- Leave the modal here, otherwise the backdrop does not disappear -->
+<div class="modal-backdrop">
+  <div class="modal fade" data-backdrop="static" id="warningModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div><img class="logo" src="assets/images/antlers.png"
+                    alt="Image of Moose Leather's antler logo">
+          <div class="modal-title">
+            <div class="modal-moose">Moose</div>
+            <div class="modal-leather">Leather</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          This site is intended for adults only. If you are under the age of 18, please leave now. <br/> (But come back when you are!)
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button id="enter-btn" type="button" class="btn btn-success" data-dismiss="modal">Enter</button>
+          <button id="leave-btn" type="button" class="btn btn-danger" data-dismiss="modal">Leave</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Adult Warning Modal End -->
+
   <div id="page-container"> <!-- footer positioning -->
-    <div id="content-wrap"> <!-- footer positioning -->
+  <div id="content-wrap"> <!-- footer positioning -->
 
   <header>
     <div w3-include-html="header.html"></div>
@@ -43,7 +79,7 @@
       <img id="scott-at-store" style="" src="assets/images/scott_at_store.jpg" class="figure-img img-fluid rounded" alt="Scott in front of Moose Leather">
             <figcaption class="figure-caption">Scott Moats who designed my logo and created much of my signage</figcaption>
     </figure>
-      <p>I&nbsp;work out of my home and can alter, repair, or create something new for you. I have extensive experience with chaps, vests, pants, shirts, harnesses, and the like. You can check out some of my original work throughout this site. Occasionally I will have items for sale in Off-The-Rack.  And, who knows, maybe I'll figure out a way to bring back our consignment rack that was quite popular at the time.</p></div>
+      <p>I&nbsp;work out of my home and can alter, repair, or create something new for you. I have extensive experience with chaps, vests, pants, shirts, harnesses, and the like. You can see some of my original work throughout this site. Occasionally I will have items for sale in Off-The-Rack.  And, who knows, maybe I'll figure out a way to bring back our consignment rack that was quite popular at the time.</p></div>
 
     <p>Feel free to text or call me on my cell at <strong><a href="tel:619-964-1865">(619) 964-1865</a></strong> or email me at <strong><a href="mailto:steve@moose-leather.com">steve@moose-leather.com</a></strong> and let me create your vision!</p>
 
@@ -52,7 +88,12 @@
 <!--    <div id="aside-container">-->
 <!--      <aside>-->
 
-  <p class="endorsement"><span>Steve does great work with leather. He is creative, fun, and detail oriented. I’m very happy with my leather that he made for me and I would go back again to him. --GM</span></p>
+  <p class="endorsement"><span class="red">Steve does great work with leather. He is creative, fun, and detail oriented. I’m very happy with my leather that he made for me and I would go back again to him. <nobr>--GM</nobr></span></p>
+
+  <p class="endorsement"><span class="orange">San Diego peeps, remember Moose Leather circa early 90’s? It was run by Steve Wendt,
+ a good friend. He does great work. If you need repairs or modifications to your leather, contact him.  <nobr>--Michael Rocklin</nobr></span></p>
+
+<!--  <p class="endorsement"><span class="yellow">Steve does great work with leather. He is creative, fun, and detail oriented. I’m very happy with my leather that he made for me and I would go back again to him. &#45;&#45;GM</span></p>-->
 <!--      </aside>-->
 
 <!--    </div>-->
@@ -78,8 +119,10 @@
 <script>
   includeHTML();
 
-  // alert($('#footer').parents()[0]);
 </script>
+
+<!-- adult warning modal -->
+<script src="assets/js/warning.js"></script>
 
 <!--<script>-->
 <!--  //Radnmizing the flags-->
@@ -98,6 +141,8 @@
 <!--  )-->
 
 <!--</script>-->
+
+
 
 </body>
 

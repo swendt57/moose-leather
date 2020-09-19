@@ -20,6 +20,42 @@
 
 <body>
 
+<!-- Adult Warning Modal Start -->
+<!-- the model will not work unless the code is placed on each page - why?? -->
+<!-- Leave the modal here, otherwise the backdrop does not disappear -->
+<div class="modal-backdrop">
+  <div class="modal fade" data-backdrop="static" id="warningModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div><img class="logo" src="assets/images/antlers.png"
+                    alt="Image of Moose Leather's antler logo">
+            <div class="modal-title">
+              <div class="modal-moose">Moose</div>
+              <div class="modal-leather">Leather</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          This site is intended for adults only. If you are under the age of 18, please leave now. <br/> (But come back when you are!)
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button id="enter-btn" type="button" class="btn btn-success" data-dismiss="modal">Enter</button>
+          <button id="leave-btn" type="button" class="btn btn-danger" data-dismiss="modal">Leave</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Adult Warning Modal End -->
+
 <div id="page-container"> <!-- footer positioning -->
   <div id="content-wrap"> <!-- footer positioning -->
 
@@ -32,11 +68,38 @@
   <div class="container">
 
     <div class="page-heading">Chaps</div>
+
+<!--    <p>Standard chaps start at $350. Stripes, side lacing, etc is additional.</p>-->
+
     <div w3-include-html="custom-links.html"></div>
 
     <div class="container">
 
       <div class="card-columns">
+
+        <div class="card">
+          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/chaps/lace-up-front-and-sides-lg.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Chaps with Lacing All Around</h5>
+            <p class="card-text">These chaps use lacing both for adjustment on the legs and back as well as for the front closure</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/chaps/lace-up.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Chaps with Stripes and Lacing</h5>
+            <p class="card-text">Theses chaps feature both red stripes and a lace-up front</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/chaps/lace-up-rear.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Chaps with Stripes and Lacing</h5>
+            <p class="card-text">The back view of the red-striped, laced-up-front chaps</p>
+          </div>
+        </div>
 
         <div class="card">
           <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/chaps/chaps-red-stripe-lg.jpg"></div>
@@ -61,31 +124,6 @@
             <p class="card-text">These chaps have a belt and buckle closure as an alternative to snaps</p>
           </div>
         </div>
-
-        <div class="card">
-          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/chaps/lace-up-front-and-sides-lg.jpg"></div>
-          <div class="card-body">
-            <h5 class="card-title">Chaps with Lacing All Around</h5>
-            <p class="card-text">These chaps use lacing both for adjustment on the legs and rear as well as for the front closure</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/chaps/lace-up.jpg"></div>
-          <div class="card-body">
-            <h5 class="card-title">Chaps with Stripes and Lacing</h5>
-            <p class="card-text">Theses chaps have both red stripes and a lace-up front</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/chaps/lace-up-rear.jpg"></div>
-          <div class="card-body">
-            <h5 class="card-title">Chaps with Stripes and Lacing</h5>
-            <p class="card-text">The rear view of the red-striped, lace-up-front, chaps</p>
-          </div>
-        </div>
-
         <div class="card">
           <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/chaps/brown-lace-up.jpg"></div>
           <div class="card-body">
@@ -98,7 +136,7 @@
           <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/chaps/brown-lace-up-sides.jpg"></div>
           <div class="card-body">
             <h5 class="card-title">Brown Chaps with Lace-up Sides</h5>
-            <p class="card-text">This pair of chaps also has lace-up sides using black thong and a black leather strip underneath</p>
+            <p class="card-text">This pair of chaps also has lace-up sides using black thong and black leather underneath</p>
           </div>
         </div>
 
@@ -114,7 +152,7 @@
           <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/chaps/standard-chaps-rear.jpg"></div>
           <div class="card-body">
             <h5 class="card-title">Standard Bar Chaps</h5>
-            <p class="card-text">The rear of my standard bar chaps lace up to allow adjustment</p>
+            <p class="card-text">To allow for adjustment, most waistbands have a lace-up back</p>
           </div>
         </div>
 
@@ -122,7 +160,7 @@
           <div class="card-img-top"><img class="img-responsive p-photo"  src="assets/images/chaps/chaps-red-stripe-2.jpg"></div>
           <div class="card-body">
             <h5 class="card-title">Chaps with Stripes</h5>
-            <p class="card-text">Another example of chaps with a red stripe down the outside of each leg</p>
+            <p class="card-text">Another example of chaps with a red stripes</p>
           </div>
         </div>
 
@@ -138,7 +176,7 @@
           <div class="card-img-top"><img class="img-responsive p-photo"  src="assets/images/chaps/female-buckle-front.jpg"></div>
           <div class="card-body">
             <h5 class="card-title">Buckle-Front Chaps</h5>
-            <p class="card-text">Another example of chaps that have a belt and buckle closure as an alternative to snap</p>
+            <p class="card-text">Another example of chaps that have a belt and buckle closure as an alternative to snaps</p>
           </div>
         </div>
 
@@ -146,7 +184,25 @@
           <div class="card-img-top"><img class="img-responsive p-photo"  src="assets/images/chaps/white-leather.jpg"></div>
           <div class="card-body">
             <h5 class="card-title">White Leather Outfit</h5>
-            <p class="card-text">An all-white matched vest and chaps</p>
+            <p class="card-text">All-white vest and chaps</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Pricing</h5>
+            <p class="card-text">$350 and up depending on your choices. Please plan on a minimum deposit of $150.</p>
+            <h5 class="card-title">Process</h5>
+            <div class="card-text">
+              Plan on 3-4 visits:
+              <ol>
+                <li>Design details and measurements</li>
+                <li>Leg adjustment and waistband details</li>
+                <li>Front &amp; back openings and waistband positioning</li>
+                <li>Ready for pick-up!</li>
+              </ol>
+              Sometimes steps 2 and 3 can be combined.
+            </div>
           </div>
         </div>
 
@@ -172,6 +228,8 @@
 <script src="assets/js/include_script.js"></script> <!-- function that mimics SSI -->
 <script src="assets/js/photo_handler.js"></script>
 <script src="assets/js/hide_header.js"></script>
+<!-- adult warning modal -->
+<script src="assets/js/warning.js"></script>
 
 <script>
   includeHTML();

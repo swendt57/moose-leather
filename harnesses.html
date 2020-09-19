@@ -20,6 +20,42 @@
 
 <body>
 
+<!-- Adult Warning Modal Start -->
+<!-- the model will not work unless the code is placed on each page - why?? -->
+<!-- Leave the modal here, otherwise the backdrop does not disappear -->
+<div class="modal-backdrop">
+  <div class="modal fade" data-backdrop="static" id="warningModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div><img class="logo" src="assets/images/antlers.png"
+                    alt="Image of Moose Leather's antler logo">
+            <div class="modal-title">
+              <div class="modal-moose">Moose</div>
+              <div class="modal-leather">Leather</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          This site is intended for adults only. If you are under the age of 18, please leave now. <br/> (But come back when you are!)
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button id="enter-btn" type="button" class="btn btn-success" data-dismiss="modal">Enter</button>
+          <button id="leave-btn" type="button" class="btn btn-danger" data-dismiss="modal">Leave</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Adult Warning Modal End -->
+
 <div id="page-container"> <!-- footer positioning -->
   <div id="content-wrap"> <!-- footer positioning -->
 
@@ -37,6 +73,22 @@
     <div class="container">
 
       <div class="card-columns">
+
+        <div class="card">
+          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/harnesses/studded-side-rings.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Studded "Side-Ring" Harness</h5>
+            <p class="card-text">This is a variation on a studded top harness</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/harnesses/full-harness.jpg"></div>
+          <div class="card-body">
+            <h5 class="card-title">Full Harness</h5>
+            <p class="card-text">This is one of the very first harnesses I made</p>
+          </div>
+        </div>
 
         <div class="card">
           <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/harnesses/studded-d-ring-harness.jpg"></div>
@@ -104,21 +156,28 @@
         </div>
 
         <div class="card">
-          <div class="card-img-top"><img class="img-responsive p-photo" src="assets/images/harnesses/studded-side-rings.jpg"></div>
+          <div class="card-img-top"><img class="img-responsive l-photo" src="assets/images/harnesses/unions.png"></div>
           <div class="card-body">
-            <h5 class="card-title">Studded "Side-Ring" Harness</h5>
-            <p class="card-text">This is a variation on a studded top harness</p>
+            <h5 class="card-title">Unions</h5>
+            <p class="card-text"><img src="assets/images/GESCLogo-R.png" style="width: 100px;margin:5px;" align="right">We carry several different styles of flat unions for harnesses and suspenders from Gentlemen's Equipment & Specialty Clothing. They come in burnished, colored, and mirror polished. Colors are black, red, blue, and yellow. Unions may not be available in all styles and finishes.</p>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-img-top"><img class="img-responsive l-photo" src="assets/images/harnesses/unions.jpg"></div>
           <div class="card-body">
-            <h5 class="card-title">Unions</h5>
-            <p class="card-text"><img src="assets/images/GESCLogo-R.png" style="width: 100px;" align="right">We carry several different styles of flat unions for harnesses and suspenders from Gentlemen's Equipment & Specialty Clothing. They come in burnished, colored, and mirror polished. Colors are black, red, blue, and yellow. Unions may not be available in all styles and finishes.</p>
+            <h5 class="card-title">Pricing</h5>
+            <p class="card-text">$125 and up depending on the type of harness, the hardware, and your other choices. Please plan on a minimum deposit of $50.</p>
+            <h5 class="card-title">Process</h5>
+            <div class="card-text">
+              Plan on 3 visits:
+              <ol>
+                <li>Design details and measurements</li>
+                <li>Fitting and adjustments</li>
+                <li>Ready for pick-up!</li>
+              </ol>
+            </div>
           </div>
         </div>
-
 
       </div>
 
@@ -142,6 +201,8 @@
 <script src="assets/js/include_script.js"></script> <!-- function that mimics SSI -->
 <script src="assets/js/photo_handler.js"></script>
 <script src="assets/js/hide_header.js"></script>
+<!-- adult warning modal -->
+<script src="assets/js/warning.js"></script>
 
 <script>
   includeHTML();
