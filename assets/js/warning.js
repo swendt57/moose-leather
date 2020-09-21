@@ -1,5 +1,7 @@
 //Check to see if user has accepted the warning before
-$(document).ready(function() {
+
+// $(document).ready(function() {
+window.onpageshow = function() {
   if ( localStorage.getItem('accepted') === null) {
     // $("#myModal").modal('show');
     $('.modal').appendTo("body").modal('show');
@@ -7,7 +9,7 @@ $(document).ready(function() {
   else {
     removeBackdrop();
   }
-});
+};
 
 //When user clicks the enter button, add token to localStorage
 $("#enter-btn").click(function () {

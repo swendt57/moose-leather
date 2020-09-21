@@ -609,6 +609,11 @@ a.nav-link:hover {
   margin-bottom: 15px;
 }
 
+.new {
+  color: red;
+  font-weight: bold;
+}
+
 /* BS OR */
 .card {
   padding: 0;
@@ -671,7 +676,8 @@ h5.card-title {
   text-align: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 575px) {
+  /* BS OR */
   .card-columns {
     column-count: 2;
   }
@@ -684,6 +690,7 @@ h5.card-title {
 }
 
 @media (min-width: 1024px) {
+  /* BS OR */
   .card-columns {
     column-count: 3;
   }
@@ -696,6 +703,7 @@ h5.card-title {
 }
 
 @media (min-width: 1350px) {
+  /* BS OR */
   .card-columns {
     column-count: 4;
   }
@@ -706,9 +714,9 @@ h5.card-title {
 
 /*---------------Disqus---------------*/
 
-.disqus-container strong {
-    color: burlywood;
-}
+/*.disqus-container strong {*/
+/*    color: burlywood;*/
+/*}*/
 
 
 /* --------------------Footer-------------------- */
@@ -802,104 +810,104 @@ form label {
 /*---------------Search Form ---------------*/
 /* Courtesy of Elwin Tamminga - https://codepen.io/elwint/pen/vGMRaB*/
 
-.button {
-	display: inline-block;
-	margin: 4px 2px;
-	/*background-color: #444;*/
-	font-size: 14px;
-	padding-left: 32px;
-	padding-right: 32px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	color: bisque;
-	text-decoration: none;
-	cursor: pointer;
-	-moz-user-select: none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
+/*.button {*/
+/*	display: inline-block;*/
+/*	margin: 4px 2px;*/
+/*	!*background-color: #444;*!*/
+/*	font-size: 14px;*/
+/*	padding-left: 32px;*/
+/*	padding-right: 32px;*/
+/*	height: 30px;*/
+/*	line-height: 30px;*/
+/*	text-align: center;*/
+/*	color: bisque;*/
+/*	text-decoration: none;*/
+/*	cursor: pointer;*/
+/*	-moz-user-select: none;*/
+/*	-khtml-user-select: none;*/
+/*	-webkit-user-select: none;*/
+/*	-ms-user-select: none;*/
+/*	user-select: none;*/
+/*}*/
 
-.button:hover {
-	transition-duration: 0.4s;
-	-moz-transition-duration: 0.4s;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	background-color: bisque;
-	color: black;
-}
+/*.button:hover {*/
+/*	transition-duration: 0.4s;*/
+/*	-moz-transition-duration: 0.4s;*/
+/*	-webkit-transition-duration: 0.4s;*/
+/*	-o-transition-duration: 0.4s;*/
+/*	background-color: bisque;*/
+/*	color: black;*/
+/*}*/
 
-.search-container {
-    float: left;
-	position: relative;
-	display: inline-block;
-	height: 30px;
-	width: 25px;
-	vertical-align: bottom;
-}
+/*.search-container {*/
+/*    float: left;*/
+/*	position: relative;*/
+/*	display: inline-block;*/
+/*	height: 30px;*/
+/*	width: 25px;*/
+/*	vertical-align: bottom;*/
+/*}*/
 
-.mglass {
-	display: inline-block;
-	pointer-events: none;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-}
+/*.mglass {*/
+/*	display: inline-block;*/
+/*	pointer-events: none;*/
+/*	-webkit-transform: rotate(-45deg);*/
+/*	-moz-transform: rotate(-45deg);*/
+/*	-o-transform: rotate(-45deg);*/
+/*	-ms-transform: rotate(-45deg);*/
+/*}*/
 
-.searchbutton {
-	position: absolute;
-	font-size: 25px;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-    border-radius: 3px 0 0 3px;
-}
+/*.searchbutton {*/
+/*	position: absolute;*/
+/*	font-size: 25px;*/
+/*	width: 100%;*/
+/*	margin: 0;*/
+/*	padding: 0;*/
+/*    border-radius: 3px 0 0 3px;*/
+/*}*/
 
-.search:focus + .searchbutton {
-	transition-duration: 0.4s;
-	-moz-transition-duration: 0.4s;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	background-color: bisque;
-	color: black;
-}
+/*.search:focus + .searchbutton {*/
+/*	transition-duration: 0.4s;*/
+/*	-moz-transition-duration: 0.4s;*/
+/*	-webkit-transition-duration: 0.4s;*/
+/*	-o-transition-duration: 0.4s;*/
+/*	background-color: bisque;*/
+/*	color: black;*/
+/*}*/
 
-.search {
-	position: absolute;
-	left: 24px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
-	background-color: bisque;
-	outline: none;
-	border: none;
-    border-radius: 0 3px 3px 0;
-	padding: 0;
-	width: 0;
-	height: 100%;
-	z-index: 10;
-	transition-duration: 0.4s;
-	-moz-transition-duration: 0.4s;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-}
+/*.search {*/
+/*	position: absolute;*/
+/*	left: 24px; !* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) *!*/
+/*	background-color: bisque;*/
+/*	outline: none;*/
+/*	border: none;*/
+/*    border-radius: 0 3px 3px 0;*/
+/*	padding: 0;*/
+/*	width: 0;*/
+/*	height: 100%;*/
+/*	z-index: 10;*/
+/*	transition-duration: 0.4s;*/
+/*	-moz-transition-duration: 0.4s;*/
+/*	-webkit-transition-duration: 0.4s;*/
+/*	-o-transition-duration: 0.4s;*/
+/*}*/
 
-.search:focus {
-	width: 250px; /* Bar width+1px */
-	padding: 0 16px 0 0;
-}
+/*.search:focus {*/
+/*	width: 250px; !* Bar width+1px *!*/
+/*	padding: 0 16px 0 0;*/
+/*}*/
 
-.expandright {
-	left: auto;
-	right: 49px; /* Button width-1px */
-}
+/*.expandright {*/
+/*	left: auto;*/
+/*	right: 49px; !* Button width-1px *!*/
+/*}*/
 
-.expandright:focus {
-	padding: 0 0 0 16px;
-}
+/*.expandright:focus {*/
+/*	padding: 0 0 0 16px;*/
+/*}*/
 
 /*---------------Adult Warning ---------------*/
-
+/* BS OR */
 .modal-dialog {
   max-width: 700px;
 }
@@ -909,10 +917,12 @@ form label {
 }
 
 .modal-header {
+  /* BS OR */
   border: 0;
 }
 
 .modal-footer {
+  /* BS OR */
   border: 0;
 }
 
@@ -923,6 +933,7 @@ form label {
   /*z-index: -1;*/
 }
 
+/* BS OR */
 .modal-title {
   font-family: "Calistoga", sans-serif;
   font-weight: 700;
@@ -945,6 +956,7 @@ form label {
 
 /* styles for medium screens */
 @media (min-width: 1035px) {
+  /* BS OR */
   .modal-title {
     margin-left: 160px;
   }
@@ -952,6 +964,7 @@ form label {
 
 /* styles for large screens */
 @media (min-width: 1400px) {
+  /* BS OR */
   .modal-title {
     margin-left: 175px;
   }
