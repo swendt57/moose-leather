@@ -91,7 +91,7 @@ p {
 
 strong {
     color: #76008c;
-  font-weight: bold;
+    font-weight: bolder;
 }
 
 a {
@@ -541,6 +541,13 @@ a.nav-link:hover {
   box-shadow: 5px 5px 1px rgba(0,0,0,.4);
 }
 
+#steve-at-rodeo {
+  width: 200px;
+  /*margin: 5px 10px 20px 20px;*/
+  border: 2px solid black;
+  box-shadow: 5px 5px 1px rgba(0,0,0,.4);
+}
+
 #scott-at-store {
   width: 200px;
   /*margin: 5px 10px 20px 20px;*/
@@ -568,8 +575,8 @@ a.nav-link:hover {
 /* styles for tablet */
 @media (min-width: 768px) {
 
-    #steve-in-store {
-        width: 400px;
+    #steve-at-rodeo {
+        width: 300px;
     }
 
   #scott-at-store {
@@ -583,8 +590,8 @@ a.nav-link:hover {
 
 /* styles for desktop */
 @media (min-width: 992px) {
-    #steve-in-store {
-        width: 500px;
+    #steve-at-rodeo {
+        width: 400px;
     }
 
   #scott-at-store {
@@ -611,6 +618,11 @@ a.nav-link:hover {
 
 .new {
   color: red;
+  font-weight: bold;
+}
+
+.price {
+  color: rgb(207,166,214);
   font-weight: bold;
 }
 
