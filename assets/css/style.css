@@ -153,8 +153,9 @@ aside {
   padding: 0;
 }
 
-
-
+#moose_logo {
+  display: none;
+}
 
 /* footer positioning */
 #page-container {
@@ -241,6 +242,13 @@ aside {
     width: 300px;
   }
 
+  #moose_logo {
+    display: block;
+    width: 175px;
+    margin: 0 25px 10px 0;
+    border: 2px solid black;
+  }
+
 }
 
 /* styles for desktop */
@@ -278,6 +286,10 @@ aside {
     bottom: 150px;
     right: 50px;
     width: 800px;
+  }
+
+  #moose_logo {
+    width: 200px;
   }
 }
 
@@ -534,15 +546,14 @@ a.nav-link:hover {
 
 /*---------------Home---------------*/
 
-#steve-in-store {
+#steve-home-photo {
   width: 200px;
-  /*margin: 5px 10px 20px 20px;*/
   border: 2px solid black;
   box-shadow: 5px 5px 1px rgba(0,0,0,.4);
 }
 
-#steve-at-rodeo {
-  width: 200px;
+#steve-home-photo-landscape {
+  width: 300px;
   /*margin: 5px 10px 20px 20px;*/
   border: 2px solid black;
   box-shadow: 5px 5px 1px rgba(0,0,0,.4);
@@ -575,9 +586,13 @@ a.nav-link:hover {
 /* styles for tablet */
 @media (min-width: 768px) {
 
-    #steve-at-rodeo {
+    #steve-home-photo {
         width: 300px;
     }
+
+  #steve-home-photo-landscape {
+    width: 400px;
+  }
 
   #scott-at-store {
     width: 250px;
@@ -590,9 +605,13 @@ a.nav-link:hover {
 
 /* styles for desktop */
 @media (min-width: 992px) {
-    #steve-at-rodeo {
+    #steve-home-photo {
         width: 400px;
     }
+
+  #steve-home-photo-landscape {
+    width: 500px;
+  }
 
   #scott-at-store {
     width: 300px;
